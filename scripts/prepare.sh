@@ -4,3 +4,5 @@ cd ./packages/react-native || echo "Failed to install React-native dependencies"
 npm install buffer@$(node -p -e "require('./package.json').dependencies.buffer")
 npm install process@$(node -p -e "require('./package.json').dependencies.process")
 
+# Run snyk-protect
+yarn run snyk-protect
